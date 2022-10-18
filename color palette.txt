@@ -1,0 +1,7 @@
+primary color -> #05284B
+Footer -> #39416c
+Secondary -> #4b4453
+Extra choice -> #00c6bc(light green), #36888b(dark green)
+testimonial -> #cccccc
+footer icons -> #85B6FF (alpha 80%)
+connect with us on social media -> 36888B alpha(35%)
