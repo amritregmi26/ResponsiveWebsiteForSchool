@@ -1571,6 +1571,14 @@
     font-size: 2rem;
 }
 
+.bottom-fix
+{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 440.5px)
 {
     .main-footer .social-media a
@@ -1587,15 +1595,6 @@
 /***************************************/
 /********* Courses Page Start **********/
 /***************************************/
-
-.course
-{
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .course .course-main
 {
     padding-top: 4rem;
@@ -1763,4 +1762,316 @@
     {
         font-size: 0.85rem;
     }
+}
+
+
+/***************************************/
+/********** About Page Start ***********/
+/***************************************/
+.about .about-main
+{
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.about .about-main .main-container h1
+{
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    color: var(--Secondary);
+    margin-bottom: 1.75rem;
+}
+
+.about .about-main .main-container span
+{
+    color: var(--dark-green);
+}
+
+.about .about-main .main-container .img-container
+{
+    width: 65%;
+    float: right;
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+.about .about-main .main-container .img-container img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.about .about-main .main-container .main-text-container p
+{
+    font-size: 1.15rem;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.about .about-main .main-container .rules-regulation
+{
+    width: 100%;
+    position: relative;
+    margin-top: 2.5rem;
+}
+
+.about .about-main .main-container .rules-regulation h1
+{
+    color: var(--primary);
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+}
+
+/********** Responsiveness *********/
+@media screen and (max-width: 991.5px)
+{
+    .about .about-main .main-container h1
+    {
+        font-size: 2.25rem;
+    }
+
+    .about .about-main .main-container .img-container
+    {
+        width: 55%;
+    }
+
+    .about .about-main .main-container .main-text-container p
+    {
+        font-size: 1.05rem;
+    }
+
+    .about .about-main .main-container .rules-regulation h1
+    {
+        font-size: 2.05rem;
+    }
+    
+    .about .about-main .main-container .rules-regulation ol li
+    {
+        font-weight: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 575.5px)
+{
+
+    .about .about-main .main-container
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .about .about-main .main-container h1
+    {
+        font-size: 1.75rem;
+    }
+
+    .about .about-main .main-container .img-container
+    {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+
+    .about .about-main .main-container .main-text-container p
+    {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .about.about-main .main-container .rules-regulation
+    {
+        margin-top: 0;
+    }
+
+    .about .about-main .main-container .rules-regulation h1
+    {
+        font-size: 1.45rem;
+    }
+    
+    .about .about-main .main-container .rules-regulation ol li
+    {
+        font-weight: 0.65rem;
+    }
+}
+
+/***************************************/
+/********* Syllabus Page Start *********/
+/***************************************/
+.syllabus .syllabus-main .main-container
+{
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.syllabus .syllabus-main .main-container .left-pane
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-right: 3rem;
+    padding-bottom: 1.5rem;
+    border-right: 0.125rem solid var(--primary);
+    width: 35%;
+    position: relative;
+}
+
+.syllabus .syllabus-main .main-container .left-pane h1
+{
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.85em;
+}
+
+.syllabus .syllabus-main .main-container .left-pane button
+{
+    background: var(--primary);
+    color: var(--white);
+    padding: 0.65rem 1.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    width: 65%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.syllabus .syllabus-main .main-container .left-pane button:focus
+{
+    box-shadow: none;
+    outline: none;
+}
+
+.syllabus .syllabus-main .main-container .right-pane
+{
+    margin-left: 4.5rem;
+    position: relative;
+    width: 65%;
+}
+
+.syllabus .syllabus-main .main-container .right-pane .header-container
+{
+    width: 100%;
+    display: flex;
+}
+
+.syllabus .syllabus-main .main-container .right-pane .header-container > *
+{
+    border: 0.0625rem solid var(--dark);
+    color: var(--primary);
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 1.15rem;
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 0.75rem;
+}
+
+.syllabus .syllabus-main .main-container .right-pane .details 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.syllabus .syllabus-main .main-container .right-pane .details .files
+{
+    display: flex;
+    width: 100%
+}
+
+.syllabus .syllabus-main .main-container .right-pane .details .files > *
+{
+    border: 0.0625rem solid var(--dark);
+    color: var(--primary);
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 1.05rem;
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 0.75rem;
+}
+
+.syllabus .syllabus-main .right-pane .details .files .download
+{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1199.5px)
+{
+    .syllabus .syllabus-main .main-container .right-pane .details .files > *
+    {
+        font-size: 0.85rem;
+    }
+
+    .syllabus .syllabus-main .main-container .right-pane .header-container > *
+    {
+        font-size: 1rem;
+    }
+
+    .syllabus .syllabus-main .main-container .left-pane h1
+    {
+        font-size: 1.45em;
+    }
+    
+    .syllabus .syllabus-main .main-container .left-pane button
+    {
+        padding: 0.45rem 1.35rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 991.5px)
+{
+    .syllabus .syllabus-main .main-container
+    {
+        width: 100%;
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+    }  
+    
+        .syllabus .syllabus-main .main-container .left-pane
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            position: relative;
+            padding: 0;
+            border: none;
+        }
+        
+        .syllabus .syllabus-main .main-container .left-pane button
+        {
+            width: calc(100% / 4);
+        }
+        
+        .syllabus .syllabus-main .main-container .right-pane
+        {
+            position: relative;
+            width: 100%;
+        }
+
+        .syllabus .syllabus-main .main-container .right-pane .header-container > *
+        {
+            border: 0.0625rem solid var(--dark);
+            color: var(--primary);
+            font-family: 'Lato', sans-serif;
+            font-weight: 800;
+            font-size: 1.15rem;
+            width: calc(100% / 3);
+            text-align: center;
+            padding: 0.75rem;
+        }
 }
