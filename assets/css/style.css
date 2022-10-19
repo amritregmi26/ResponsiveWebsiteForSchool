@@ -2182,6 +2182,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 1.5rem;
     width: 100%;
     padding: 1rem;
     margin: 0.25rem 0;
@@ -2199,5 +2200,47 @@
 {
     background: var(--primary);
     color: var(--white);
+}
+
+/********** Responsiveness **********/
+@media screen and (max-width: 991.5px)
+{
+    .notes-main .main-container .search-details-container form
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .notes-main .main-container .search-details-container form > *:not(:last-child)
+    {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 767.5px)
+{
+ 
+    .notes-main .main-container .search-result-list .search-result > *
+    {
+        color: var(--primary);
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        text-transform: capitalize;
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 350.5px)
+{
+    .notes-main .main-container .search-details-container form > *:not(:last-child)
+    {
+        width: 100%;
+    }
+
+    .notes-main .main-container .search-result-list .search-result .btn
+    {
+        font-size: 0.65rem;
+    }
 
 }
