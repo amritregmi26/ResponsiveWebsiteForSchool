@@ -2057,33 +2057,33 @@
         flex-direction: column;
     }  
     
-        .syllabus .syllabus-main .main-container .left-pane
-        {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            align-items: flex-start;
-            justify-content: center;
-            width: 100%;
-            position: relative;
-            padding: 0;
-            border: none;
-        }
+    .syllabus .syllabus-main .main-container .left-pane
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        padding: 0;
+        border: none;
+    }
 
-        
-        .syllabus .syllabus-main .main-container .left-pane .button-container
-        {
-            flex-direction: row;
-            gap: 1.5rem;
-            width:100%;
-        }
-        
-        .syllabus .syllabus-main .main-container .right-pane-wrapper
-        {
-            position: relative;
-            width: 100%;
-            margin: 0;
-        }
+    
+    .syllabus .syllabus-main .main-container .left-pane .button-container
+    {
+        flex-direction: row;
+        gap: 1.5rem;
+        width:100%;
+    }
+    
+    .syllabus .syllabus-main .main-container .right-pane-wrapper
+    {
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 767.5px)
@@ -2123,4 +2123,81 @@
         font-size: 0.7rem;
         padding: 0.25rem 1rem;
     }
+}
+
+/***************************************/
+/********** Notes Page Start **********/
+/***************************************/
+.notes .notes-main
+{
+    margin-top: 1.5rem;
+}
+
+.notes-main .main-container .search-details-container
+{
+    width: 100%;
+    position: relative;
+}
+
+.notes-main .main-container .search-details-container form
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.notes-main .main-container .search-details-container form > *
+{
+    padding: 0.5rem 1.25rem;
+    outline: none;
+    border: 0.125rem solid var(--primary);
+    background: none;
+    border-radius: 0.5rem;
+    color: var(--primary);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.notes-main .main-container .search-details-container form input[type="submit"]
+{
+    padding: 0.5rem 1.75rem;
+    background: var(--dark-green);
+    border: none;
+    color: var(--white);
+}
+
+.notes-main .main-container .search-result-list
+{
+    width: 100%;
+    background: var(--testimonial-bg);
+    position: relative;
+    border-radius: 0.6rem;
+    margin-top: 2rem;
+}
+
+.notes-main .main-container .search-result-list .search-result
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    margin: 0.25rem 0;
+}
+
+.notes-main .main-container .search-result-list .search-result > *
+{
+    color: var(--primary);
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.notes-main .main-container .search-result-list .search-result .btn
+{
+    background: var(--primary);
+    color: var(--white);
+
 }
