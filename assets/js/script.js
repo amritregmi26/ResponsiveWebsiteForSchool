@@ -1,7 +1,11 @@
-function redirection()
-{
-    window.location.href = 'https://amritregmi.com.np/view/course.html';
-}
-var button = document.querySelector('#courses .course-card  .card-body .btn');
-button.addEventListener('click', redirection);
+!(function(d){
+    function aboutPageRedirection()
+    {
+        let introRead = document.querySelector('.introduction .btn');
+        introRead.addEventListener('click', () => {
+            window.location.href = '../about.html';
+        });
+    }
 
+    aboutPageRedirection();
+}) (document);
