@@ -2159,7 +2159,7 @@
     font-weight: 700;
 }
 
-.notes-main .main-container .search-details-container form input[type="submit"]
+.notes-main .main-container .search-details-container form input[type="button"]
 {
     padding: 0.5rem 1.75rem;
     background: var(--dark-green);
