@@ -1,6 +1,6 @@
 !(function(d){
 
-    let siteUrl = 'https://www.amritregmi.com.np/';
+    let siteUrl = 'https://amritregmi.com.np/';
     
     if(window.location.href ==  siteUrl || 
         window.location.href == `${siteUrl}index.html` || 
