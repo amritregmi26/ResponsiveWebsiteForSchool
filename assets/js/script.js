@@ -1,6 +1,10 @@
 !(function(d){
 
-    if(window.location.href == 'http://127.0.0.1:5500' || window.location.href == 'http://127.0.0.1:5500/index.html')
+    let siteUrl = 'https://www.amritregmi.com.np/';
+    
+    if(window.location.href ==  siteUrl || 
+        window.location.href == `${siteUrl}index.html` || 
+        window.location.href == `${siteUrl}index.html#footer`)
     {
         function aboutPageRedirection()
         {
@@ -28,7 +32,7 @@
         aboutPageRedirection();
     }
 
-    if(window.location.href == 'http://127.0.0.1:5500/notes.html')
+    if(window.location.href == `${siteUrl}notes.html`)
     {
         function notesPage() 
         {
@@ -42,7 +46,7 @@
         notesPage();
     }
 
-    if(window.location.href == 'http://127.0.0.1:5500/course.html')
+    if(window.location.href == `${siteUrl}course.html`)
     {
        let courseTitle = localStorage.getItem("title");
        d.querySelector(".course-main .course-description h1").innerHTML = courseTitle;   
